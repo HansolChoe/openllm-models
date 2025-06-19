@@ -1183,6 +1183,25 @@
     reasoning_parser: deepseek_r1
   alias:
     - 8b
+"qwen3:8b-sat":
+  project: vllm-chat
+  service_config:
+    name: qwen3
+    traffic:
+      timeout: 300
+    resources:
+      gpu: 1
+      gpu_type: nvidia-l4
+  engine_config:
+    model: Qwen/Qwen3-8B
+    max_model_len: 38912
+    tool_call_parser: "hermes"
+    enable_auto_tool_choice: true
+    max_num_seqs: 256
+    enable_reasoning: true
+    reasoning_parser: deepseek_r1
+  alias:
+    - 8b
 "qwen3:30b-a3b":
   project: vllm-chat
   service_config:
