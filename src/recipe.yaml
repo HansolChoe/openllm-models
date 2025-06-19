@@ -1175,7 +1175,7 @@
       gpu_type: nvidia-l4
   engine_config:
     model: Qwen/Qwen3-8B
-    max_model_len: 4096
+    max_model_len: 38912
     tool_call_parser: "hermes"
     enable_auto_tool_choice: true
     max_num_seqs: 256
