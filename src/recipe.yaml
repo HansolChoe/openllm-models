@@ -1201,7 +1201,7 @@
     enable_reasoning: true
     reasoning_parser: deepseek_r1
   alias:
-    - 8b
+    - 8b-sat
 "qwen3:30b-a3b":
   project: vllm-chat
   service_config:
